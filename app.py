@@ -32,8 +32,8 @@ retriever = docsearch.as_retriever(search_type="similarity", search_kwargs={"k":
 
 # ✅ Use Groq Model
 chatModel = ChatGroq(
-    model_name="deepseek-r1-distill-llama-70b",
-    temperature=0.7
+    model_name="llama-3.1-8b-instant",  # Other options: mixtral-8x7b-32768, gemma-7b-it
+    temperature=0.5
 )
 system_prompt = (
     "You are an Medical assistant for question-answering tasks. "
